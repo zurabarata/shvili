@@ -1,4 +1,4 @@
-import { camera, trash, close } from 'ionicons/icons';
+import { camera } from 'ionicons/icons';
 import {
     IonContent,
     IonHeader,
@@ -14,7 +14,6 @@ import {
     IonImg,
     IonActionSheet,
 } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
 import { usePhotoGallery } from '../hooks/usePhotoGallery';
 import './Tab2.css';
 
