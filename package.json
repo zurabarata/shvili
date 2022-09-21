@@ -3,11 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@capacitor/android": "4.2.0",
     "@capacitor/app": "4.0.1",
     "@capacitor/camera": "^4.1.1",
     "@capacitor/core": "4.2.0",
     "@capacitor/filesystem": "^4.1.1",
     "@capacitor/haptics": "4.0.1",
+    "@capacitor/ios": "4.2.0",
     "@capacitor/keyboard": "4.0.1",
     "@capacitor/preferences": "^4.0.1",
     "@capacitor/status-bar": "4.0.1",
