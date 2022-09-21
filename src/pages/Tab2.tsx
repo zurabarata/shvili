@@ -12,7 +12,6 @@ import {
     IonRow,
     IonCol,
     IonImg,
-    IonActionSheet,
 } from '@ionic/react';
 import { usePhotoGallery } from '../hooks/usePhotoGallery';
 import './Tab2.css';
