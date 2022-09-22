@@ -2,6 +2,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
 import React from "react";
+import {beer, football} from "ionicons/icons";
 
 export const Tab3: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ export const Tab3: React.FC = () => {
             <IonTitle size="large">Tab 3</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
+          <ExploreContainer name="Football page" icon={football} />
       </IonContent>
     </IonPage>
   );
