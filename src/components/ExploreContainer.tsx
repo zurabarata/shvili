@@ -1,5 +1,5 @@
 import './ExploreContainer.css';
-import {IonIcon, IonInput} from "@ionic/react";
+import {IonIcon} from "@ionic/react";
 import React from "react";
 
 interface ContainerProps {
