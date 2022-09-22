@@ -15,8 +15,9 @@ import {
 } from '@ionic/react';
 import { usePhotoGallery } from '../hooks/usePhotoGallery';
 import './Tab2.css';
+import React from "react";
 
-const Tab2: React.FC = () => {
+export const Tab2: React.FC = () => {
 
     const { photos, takePhoto } = usePhotoGallery();
 
@@ -52,5 +53,3 @@ const Tab2: React.FC = () => {
     </IonPage>
   );
 };
-
-export default Tab2;
