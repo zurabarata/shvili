@@ -2,7 +2,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
 import React from "react";
-import {beer, football} from "ionicons/icons";
+import {football} from "ionicons/icons";
 
 export const Tab3: React.FC = () => {
   return (
