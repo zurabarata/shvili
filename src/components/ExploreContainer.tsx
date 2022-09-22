@@ -10,13 +10,15 @@ interface ContainerProps {
 const ExploreContainer: React.FC<ContainerProps> = ({ name, icon }) => {
   return (
     <div className="container">
+        <a href="https://github.com/zurabarata" target="_blank" rel="noreferrer">
+            <IonIcon style={{
+                fontSize: '128px'
+            }} icon={icon} />
+        </a>
       <strong style={{
           maxWidth: '90vw',
           whiteSpace: 'pre-wrap'
       }}>{name}</strong>
-        <IonIcon style={{
-          fontSize: '128px'
-        }} icon={icon} />
       {/*<p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>*/}
     </div>
   );

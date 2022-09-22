@@ -2,6 +2,12 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import React from "react";
+import {logoGithub} from 'ionicons/icons';
+
+const aboutMe = "I'm Zurab Baratashvili \n from Tbilisi, Georgia\n " +
+    "based in Berlin, Germany\n" +
+    "I'm passioned about software \n and business development."
+
 
 export const Main: React.FC = () => {
   return (
@@ -17,8 +23,7 @@ export const Main: React.FC = () => {
             <IonTitle size="large">Tab 1</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name={"I'm Zurab Baratashvili \n from Tbilisi, Georgia\n " +
-            "I'm passioned about software \n and business development."} />
+        <ExploreContainer name={aboutMe} icon={logoGithub} />
       </IonContent>
     </IonPage>
   );
