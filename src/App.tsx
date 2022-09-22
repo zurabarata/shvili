@@ -11,9 +11,9 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import {beer, images, football} from 'ionicons/icons';
-import {Tab1} from './pages/Tab1';
 import {Photos} from "./pages/Photos";
 import {Tab3} from './pages/Tab3';
+import {Main} from "./pages/Main";
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -41,8 +41,8 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="/tab1">
-            <Tab1 />
+          <Route exact path="/main">
+            <Main />
           </Route>
           <Route exact path="/photos">
             <Photos />
@@ -55,18 +55,18 @@ const App: React.FC = () => (
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+          <IonTabButton tab="main" href="/main">
             <IonIcon icon={beer} />
-            <IonLabel>Tab 1</IonLabel>
+            <IonLabel>Me</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="photos" href="/photos">
+{/*          <IonTabButton tab="photos" href="/photos">
             <IonIcon icon={images} />
             <IonLabel>Gallery</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon icon={football} />
             <IonLabel>Tab 3</IonLabel>
-          </IonTabButton>
+          </IonTabButton>*/}
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>

@@ -1,5 +1,6 @@
 import './ExploreContainer.css';
-import {IonIcon} from "@ionic/react";
+import {IonIcon, IonInput} from "@ionic/react";
+import React from "react";
 
 interface ContainerProps {
   name: string;
@@ -9,7 +10,10 @@ interface ContainerProps {
 const ExploreContainer: React.FC<ContainerProps> = ({ name, icon }) => {
   return (
     <div className="container">
-      {/*<strong>{name}</strong>*/}
+      <strong style={{
+          maxWidth: '90vw',
+          whiteSpace: 'pre-wrap'
+      }}>{name}</strong>
         <IonIcon style={{
           fontSize: '128px'
         }} icon={icon} />

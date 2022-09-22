@@ -2,14 +2,13 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import React from "react";
-import {beer} from "ionicons/icons";
 
-export const Tab1: React.FC = () => {
+export const Main: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle>Zurab</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -18,7 +17,8 @@ export const Tab1: React.FC = () => {
             <IonTitle size="large">Tab 1</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Beer page" icon={beer} />
+        <ExploreContainer name={"I'm Zurab Baratashvili \n from Tbilisi, Georgia\n " +
+            "I'm passioned about software \n and business development."} />
       </IonContent>
     </IonPage>
   );
