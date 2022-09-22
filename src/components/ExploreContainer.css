@@ -9,11 +9,13 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  font-family: 'Monorama-Regular', monospace;
 }
 
 .container strong {
   font-size: 20px;
   line-height: 26px;
+  font-family: 'Monorama-Regular', monospace;
 }
 
 .container p {
@@ -21,8 +23,10 @@
   line-height: 22px;
   color: #8c8c8c;
   margin: 0;
+  font-family: 'Monorama-Regular', monospace;
 }
 
 .container a {
   text-decoration: none;
+  font-family: 'Monorama-Regular', monospace;
 }
