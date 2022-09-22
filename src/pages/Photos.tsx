@@ -14,10 +14,10 @@ import {
     IonImg,
 } from '@ionic/react';
 import { usePhotoGallery } from '../hooks/usePhotoGallery';
-import './Tab2.css';
+import './Photos.css';
 import React from "react";
 
-export const Tab2: React.FC = () => {
+export const Photos: React.FC = () => {
 
     const { photos, takePhoto } = usePhotoGallery();
 
