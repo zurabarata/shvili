@@ -10,7 +10,7 @@ interface ContainerProps {
 const ExploreContainer: React.FC<ContainerProps> = ({ name, icon }) => {
   return (
     <div className="container">
-        <a href="https://github.com/zurabarata" target="_blank" rel="noreferrer">
+        <a href="https://github.com/zurabarata" target="_blank" rel="noopener noreferrer">
             <IonIcon style={{
                 fontSize: '128px'
             }} icon={icon} />
