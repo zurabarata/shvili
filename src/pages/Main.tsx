@@ -2,7 +2,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import React from "react";
-import {logoGithub} from 'ionicons/icons';
+import zurab from '../Zurab-Baratashvili.svg';
 
 const aboutMe = "I'm Zurab Baratashvili \n from Tbilisi, Georgia\n " +
     "based in Berlin, Germany\n" +
@@ -23,7 +23,7 @@ export const Main: React.FC = () => {
             {/*<IonTitle size="large">Tab 1</IonTitle>*/}
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name={aboutMe} icon={logoGithub} />
+        <ExploreContainer name={aboutMe} icon={zurab} />
       </IonContent>
     </IonPage>
   );
