@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import {beer, images, football} from 'ionicons/icons';
+import {beer} from 'ionicons/icons';
 import {Photos} from "./pages/Photos";
 import {Tab3} from './pages/Tab3';
 import {Main} from "./pages/Main";
