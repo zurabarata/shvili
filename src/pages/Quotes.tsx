@@ -3,6 +3,7 @@ import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
 import React from "react";
 import {fetchQuote} from "./../utils/fetch-quote";
+import {refresh} from "ionicons/icons";
 
 export const Quotes: React.FC = () => {
 
@@ -17,7 +18,7 @@ export const Quotes: React.FC = () => {
     }
     , []);
 
-    const quoteWithAuthor = quote + "\n - " + author;
+    const quoteWithAuthor = quote + "\n\n - " + author;
 
 
   return (
@@ -33,7 +34,7 @@ export const Quotes: React.FC = () => {
             <IonTitle size="large">Quotes</IonTitle>
           </IonToolbar>
         </IonHeader>
-          <ExploreContainer name={quoteWithAuthor} />
+          <ExploreContainer name={quoteWithAuthor} icon={refresh} />
       </IonContent>
     </IonPage>
   );

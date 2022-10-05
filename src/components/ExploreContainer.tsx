@@ -1,7 +1,6 @@
 import './ExploreContainer.css';
 import React from "react";
-import {IonIcon} from "@ionic/react";
-import {refresh} from "ionicons/icons";
+import {IonIcon, IonText} from "@ionic/react";
 import {refreshPage} from "./../../src/utils/refresh-page";
 
 interface ContainerProps {
@@ -13,15 +12,17 @@ const ExploreContainer: React.FC<ContainerProps> = ({ name, icon }) => {
   return (
     <div className="container">
 
-      <strong style={{
-          maxWidth: '90vw',
-          whiteSpace: 'pre-wrap'
-      }}>{name}</strong>
+      <IonText style={{
+          maxWidth: '500px',
+          whiteSpace: 'pre-wrap',
+          fontSize: '20px',
+          padding: '20px'
+      }}>{name}</IonText>
       {/*<p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>*/}
         <br/>
         <IonIcon onClick={refreshPage} style={
             {fontSize: '32px'}
-        } icon={refresh} />
+        } icon={icon} />
     </div>
   );
 };

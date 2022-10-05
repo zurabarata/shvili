@@ -11,7 +11,6 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import {beer, chatbubble} from 'ionicons/icons';
-import {Photos} from "./pages/Photos";
 import {Main} from "./pages/Main";
 import {Quotes} from "./pages/Quotes";
 
@@ -44,9 +43,9 @@ const App: React.FC = () => (
           <Route exact path="/main">
             <Main />
           </Route>
-          <Route exact path="/photos">
+{/*          <Route exact path="github">
             <Photos />
-          </Route>
+          </Route>*/}
           <Route path="/quotes">
             <Quotes />
           </Route>
@@ -59,9 +58,9 @@ const App: React.FC = () => (
             <IonIcon icon={beer} />
             <IonLabel>Me</IonLabel>
           </IonTabButton>
-{/*          <IonTabButton tab="photos" href="/photos">
-            <IonIcon icon={images} />
-            <IonLabel>Gallery</IonLabel>
+{/*          <IonTabButton tab="github" href="github">
+            <IonIcon icon={logoGithub} />
+            <IonLabel>Github</IonLabel>
           </IonTabButton>*/}
           <IonTabButton tab="quotes" href="/quotes">
             <IonIcon icon={chatbubble} />

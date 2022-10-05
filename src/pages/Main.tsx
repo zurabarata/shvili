@@ -4,9 +4,11 @@ import './Tab1.css';
 import React from "react";
 import zurab from '../Zurab-Baratashvili.svg';
 
-const aboutMe = "I'm Zurab Baratashvili \n from Tbilisi, Georgia\n " +
-    "based in Berlin, Germany\n" +
-    "I'm passioned about software \n and business development."
+const aboutMe = "I'm:\nZurab Baratashvili \n from Georgia 🇬🇪\n " +
+    "based in Berlin 🐻\n" +
+    "I'm passioned about:\n" +
+    "sports ⚽️\n" +
+    "software 👨🏽‍💻\n and \nbusiness\n development."
 
 
 export const Main: React.FC = () => {
