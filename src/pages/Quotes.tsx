@@ -1,9 +1,7 @@
-import {IonContent, IonHeader, IonIcon, IonPage, IonTitle, IonToolbar} from '@ionic/react';
+import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar} from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
 import React from "react";
-import {refresh} from "ionicons/icons";
-
 
 const fetchQuote = async () => {
     const response = await fetch('https://api.quotable.io/random');
