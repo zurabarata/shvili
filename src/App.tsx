@@ -10,10 +10,10 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import {beer} from 'ionicons/icons';
+import {beer, chatbubble} from 'ionicons/icons';
 import {Photos} from "./pages/Photos";
-import {Tab3} from './pages/Tab3';
 import {Main} from "./pages/Main";
+import {Quotes} from "./pages/Quotes";
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -47,8 +47,8 @@ const App: React.FC = () => (
           <Route exact path="/photos">
             <Photos />
           </Route>
-          <Route path="/tab3">
-            <Tab3 />
+          <Route path="/quotes">
+            <Quotes />
           </Route>
           <Route exact path="/">
             <Redirect to="/main" />
@@ -62,11 +62,11 @@ const App: React.FC = () => (
 {/*          <IonTabButton tab="photos" href="/photos">
             <IonIcon icon={images} />
             <IonLabel>Gallery</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon icon={football} />
-            <IonLabel>Tab 3</IonLabel>
           </IonTabButton>*/}
+          <IonTabButton tab="quotes" href="/quotes">
+            <IonIcon icon={chatbubble} />
+            <IonLabel>Quotes</IonLabel>
+          </IonTabButton>
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
