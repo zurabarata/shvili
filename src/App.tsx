@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import {beer, chatbubble} from 'ionicons/icons';
+import {beer, calculator, chatbubble} from 'ionicons/icons';
 import {Main} from "./pages/Main";
 import {Quotes} from "./pages/Quotes";
 
@@ -32,6 +32,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import {NumbersFacts} from "./pages/NumbersFacts";
 
 setupIonicReact();
 
@@ -43,9 +44,9 @@ const App: React.FC = () => (
           <Route exact path="/main">
             <Main />
           </Route>
-{/*          <Route exact path="github">
-            <Photos />
-          </Route>*/}
+          <Route exact path="/number-facts">
+            <NumbersFacts />
+          </Route>
           <Route path="/quotes">
             <Quotes />
           </Route>
@@ -59,7 +60,7 @@ const App: React.FC = () => (
             <IonLabel>Me</IonLabel>
           </IonTabButton>
 {/*          <IonTabButton tab="github" href="github">
-            <IonIcon icon={logoGithub} />
+            <IonIcon icon={calculator} />
             <IonLabel>Github</IonLabel>
           </IonTabButton>*/}
           <IonTabButton tab="quotes" href="/quotes">
