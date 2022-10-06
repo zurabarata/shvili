@@ -4,7 +4,7 @@ import './Tab1.css';
 import React from "react";
 import zurab from '../Zurab-Baratashvili.svg';
 
-const aboutMe = "I'm:\nZurab Baratashvili \n from Georgia 🇬🇪\n " +
+const aboutMe = "I'm:\nZurab Baratashvili \n ზურაბ ბარათაშვილი \n from Georgia 🇬🇪\n " +
     "based in Berlin 🐻\n" +
     "I'm passioned about:\n" +
     "sports ⚽️\n" +
