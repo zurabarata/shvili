@@ -1,7 +1,7 @@
 import {IonContent, IonHeader, IonInput, IonPage, IonTextarea, IonTitle, IonToolbar} from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
-import React, {ReactEventHandler, ReactNode, useState} from "react";
+import React from "react";
 import {refresh} from "ionicons/icons";
 import {fetchNumbersFacts} from "./../utils/fetch-numbers-facts";
 
