@@ -1,4 +1,4 @@
-import {IonContent, IonHeader, IonInput, IonPage, IonTextarea, IonTitle, IonToolbar} from '@ionic/react';
+import {IonContent, IonHeader, IonInput, IonPage, IonTitle, IonToolbar} from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
 import React from "react";
