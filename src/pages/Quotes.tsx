@@ -1,17 +1,17 @@
 import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar} from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab3.css';
-import React, {useState} from "react";
+import {FunctionComponent, useEffect, useState} from "react";
 import {fetchQuote} from "./../utils/fetch-quote";
 import {refresh} from "ionicons/icons";
 
-export const Quotes: React.FC = () => {
+export const Quotes: FunctionComponent = () => {
 
-    const [quote, setQuote] = React.useState('');
-    const [author, setAuthor] = React.useState('');
+    const [quote, setQuote] = useState('');
+    const [author, setAuthor] = useState('');
     const [isLoading, setIsLoading] = useState(false);
 
-    React.useEffect(() => {
+    useEffect(() => {
         setIsLoading(true);
         fetchQuote().then((data) => {
             setQuote(data.content);

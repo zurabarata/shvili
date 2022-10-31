@@ -10,9 +10,10 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import {beer, chatbubble} from 'ionicons/icons';
+import {beer, chatbubble, logoGithub} from 'ionicons/icons';
 import {Main} from "./pages/Main";
 import {Quotes} from "./pages/Quotes";
+import {Development} from "./pages/Development";
 
 
 
@@ -34,7 +35,6 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import {NumbersFacts} from "./pages/NumbersFacts";
 
 setupIonicReact();
 
@@ -46,8 +46,8 @@ const App: React.FC = () => (
           <Route exact path="/main">
             <Main />
           </Route>
-          <Route exact path="/number-facts">
-            <NumbersFacts />
+          <Route path="/development">
+            <Development />
           </Route>
           <Route path="/quotes">
             <Quotes />
@@ -61,10 +61,10 @@ const App: React.FC = () => (
             <IonIcon icon={beer} />
             <IonLabel>Me</IonLabel>
           </IonTabButton>
-{/*          <IonTabButton tab="github" href="github">
-            <IonIcon icon={calculator} />
-            <IonLabel>Github</IonLabel>
-          </IonTabButton>*/}
+          <IonTabButton tab="development" href="development">
+            <IonIcon icon={logoGithub} />
+            <IonLabel>Development</IonLabel>
+          </IonTabButton>
           <IonTabButton tab="quotes" href="/quotes">
             <IonIcon icon={chatbubble} />
             <IonLabel>Quotes</IonLabel>
