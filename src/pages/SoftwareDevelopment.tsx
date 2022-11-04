@@ -2,6 +2,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import React from "react";
+import {logoGithub} from "ionicons/icons";
 
 const myTechStack = "My current tech stack:\n " +
     "Frontend: React, Typescript\n " +
@@ -13,7 +14,7 @@ const myTechStack = "My current tech stack:\n " +
     "Beginner in: Python"
 
 
-export const Development: React.FC = () => {
+export const SoftwareDevelopment: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -27,7 +28,7 @@ export const Development: React.FC = () => {
             {/*<IonTitle size="large">Tab 1</IonTitle>*/}
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name={myTechStack} />
+        <ExploreContainer name={myTechStack} icon={logoGithub}/>
       </IonContent>
     </IonPage>
   );

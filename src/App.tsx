@@ -13,7 +13,8 @@ import { IonReactRouter } from '@ionic/react-router';
 import {beer, chatbubble, logoGithub} from 'ionicons/icons';
 import {Main} from "./pages/Main";
 import {Quotes} from "./pages/Quotes";
-import {Development} from "./pages/Development";
+import {SoftwareDevelopment} from "./pages/SoftwareDevelopment";
+import {SoftwareEngineering} from "./pages/SoftwareEngineering";
 
 
 
@@ -46,29 +47,36 @@ const App: React.FC = () => (
           <Route exact path="/main">
             <Main />
           </Route>
-          <Route path="/development">
-            <Development />
-          </Route>
           <Route path="/quotes">
             <Quotes />
           </Route>
+{/*          <Route exact path="/software-development">
+            <SoftwareDevelopment />
+          </Route>*/}
           <Route exact path="/">
             <Redirect to="/main" />
           </Route>
+{/*          <Route exact path="/software-engineering">
+            <SoftwareEngineering />
+          </Route>*/}
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="main" href="/main">
             <IonIcon icon={beer} />
             <IonLabel>Me</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="development" href="development">
-            <IonIcon icon={logoGithub} />
-            <IonLabel>Development</IonLabel>
-          </IonTabButton>
           <IonTabButton tab="quotes" href="/quotes">
             <IonIcon icon={chatbubble} />
             <IonLabel>Quotes</IonLabel>
           </IonTabButton>
+{/*          <IonTabButton tab="software-development" href="software-development">
+            <IonIcon icon={logoGithub} />
+            <IonLabel>Development</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="software-engineering" href="software-engineering">
+            <IonIcon icon={logoGithub} />
+            <IonLabel>SoftwareEngineering</IonLabel>
+          </IonTabButton>*/}
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
