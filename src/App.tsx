@@ -10,13 +10,9 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import {beer, chatbubble, logoGithub} from 'ionicons/icons';
+import {beer, chatbubble} from 'ionicons/icons';
 import {Main} from "./pages/Main";
 import {Quotes} from "./pages/Quotes";
-import {SoftwareDevelopment} from "./pages/SoftwareDevelopment";
-import {SoftwareEngineering} from "./pages/SoftwareEngineering";
-
-
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';

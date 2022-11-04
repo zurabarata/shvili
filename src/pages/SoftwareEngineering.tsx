@@ -3,7 +3,6 @@ import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import React from "react";
 import {gitBranch} from "ionicons/icons";
-import zurab from "src/Zurab-Baratashvili.svg";
 
 const aboutMe = "I'm:\nZurab Baratashvili \n ზურაბ ბარათაშვილი \n from Georgia 🇬🇪\n " +
     "based in Berlin 🐻\n" +
