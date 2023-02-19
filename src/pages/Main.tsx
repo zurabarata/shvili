@@ -2,8 +2,6 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import React from "react";
-import zurabImage from '../Zurab Baratashvili.jpeg';
-import {Card} from "../components/Card";
 
 const aboutMe = "hi i'm zurab: \n " +
     "a software dev and\n" +

@@ -1,6 +1,6 @@
 import React, {FunctionComponent} from 'react';
 import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
-import zurabPhoto from '../Zurab Baratashvili.jpeg';
+
 
 interface CardProps {
     title: string;
