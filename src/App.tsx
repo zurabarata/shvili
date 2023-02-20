@@ -46,9 +46,8 @@ const App: React.FC = () => (
           <Route path="/quotes">
             <Quotes />
           </Route>
-{/*          <Route exact path="/software-development">
-            <SoftwareDevelopment />
-          </Route>*/}
+          <Route />
+          <Route />
           <Route exact path="/">
             <Redirect to="/main" />
           </Route>
@@ -62,10 +61,10 @@ const App: React.FC = () => (
             <IonIcon icon={chatbubble} />
             <IonLabel>Quotes</IonLabel>
           </IonTabButton>
-          <IonTabButton href="https://github.com/zurabarata/" target="_blank">
+{/*          <IonTabButton href="https://github.com/zurabarata/" target="_blank">
             <IonIcon icon={logoGithub} />
             <IonLabel>Software</IonLabel>
-          </IonTabButton>
+          </IonTabButton>*/}
           <IonTabButton href="https://instagram.com/zurabarata" target="_blank">
             <IonIcon icon={logoInstagram} />
             <IonLabel>Insta</IonLabel>
