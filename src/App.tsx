@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import {beer, chatbubble, logoGithub, logoInstagram} from 'ionicons/icons';
+import {beer, chatbubble, logoInstagram} from 'ionicons/icons';
 import {Main} from "./pages/Main";
 import {Quotes} from "./pages/Quotes";
 
