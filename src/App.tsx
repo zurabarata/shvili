@@ -62,7 +62,7 @@ const App: React.FC = () => (
             <IonIcon icon={chatbubble} />
             <IonLabel>Quotes</IonLabel>
           </IonTabButton>
-          <IonTabButton href="https://github.com/zurabarata" target="_blank">
+          <IonTabButton href="https://github.com/zurabarata/" target="_blank">
             <IonIcon icon={logoGithub} />
             <IonLabel>Software</IonLabel>
           </IonTabButton>
