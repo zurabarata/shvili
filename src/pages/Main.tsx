@@ -11,13 +11,15 @@ const aboutMe = "hi i'm zurab: \n " +
 
 export const Main: React.FC = () => {
   return (
-    <IonPage>
+    <IonPage style={{
+        color: 'yellow'
+    }}>
       <IonHeader>
         <IonToolbar>
           <IonTitle>Zurab</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen >
         <IonHeader collapse="condense">
           <IonToolbar>
             {/*<IonTitle size="large">Tab 1</IonTitle>*/}
