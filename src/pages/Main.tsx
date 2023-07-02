@@ -3,9 +3,9 @@ import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import React from "react";
 
-const aboutMe = "hi i'm zurab: \n " +
-    "a software dev and\n" +
-    "a wannabe players' agent\n" +
+const aboutMe = "hello there i'm zurab: \n " +
+    "a self-thought software developer\n" +
+    "and an emerging players' agent.\n" +
     "more tba soonish"
 
 
