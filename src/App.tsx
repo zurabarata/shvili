@@ -10,9 +10,12 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import {beer, chatbubble, logoInstagram} from 'ionicons/icons';
+import {
+football,
+  logoGithub,
+} from 'ionicons/icons';
 import {Main} from "./pages/Main";
-import {Quotes} from "./pages/Quotes";
+import {StoryTeller} from "./pages/StoryTeller";
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -43,8 +46,8 @@ const App: React.FC = () => (
           <Route exact path="/main">
             <Main />
           </Route>
-          <Route path="/quotes">
-            <Quotes />
+          <Route path="/storyteller">
+            <StoryTeller />
           </Route>
           <Route />
           <Route />
@@ -54,20 +57,12 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="main" href="/main">
-            <IonIcon icon={beer} />
-            <IonLabel>Me</IonLabel>
+            <IonIcon icon={football} />
+            <IonLabel>me</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="quotes" href="/quotes">
-            <IonIcon icon={chatbubble} />
-            <IonLabel>Quotes</IonLabel>
-          </IonTabButton>
-{/*          <IonTabButton href="https://github.com/zurabarata/" target="_blank">
+          <IonTabButton href="https://github.com/zurabarata" target="_blank">
             <IonIcon icon={logoGithub} />
-            <IonLabel>Software</IonLabel>
-          </IonTabButton>*/}
-          <IonTabButton href="https://instagram.com/zurabarata" target="_blank">
-            <IonIcon icon={logoInstagram} />
-            <IonLabel>Insta</IonLabel>
+            <IonLabel>github</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
