@@ -4,7 +4,7 @@ import './Tab1.css';
 import React from "react";
 
 const aboutMe = "hello there i'm zurab: \n " +
-    "a self-thought software developer\n" +
+    "a self-taught software developer\n" +
     "and an emerging players' agent.\n" +
     "more tba soonish"
 
